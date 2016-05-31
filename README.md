@@ -1,19 +1,19 @@
-Running Instruction:
+## Running Instruction:
 Please run the program from Implement/Run.java;
 You can change the input under: inputs/Input;
 The output will be outputs/Output
 
-write up:
+## write up:
 
 
-What is the memory footprint for your approach? What is the running time for each add link, remove link, and is linked?
+### What is the memory footprint for your approach? What is the running time for each add link, remove link, and is linked?
 
 Answer:
 Use a Adjacent list implemented with hashMap, which will need O(n*deg(n)) memory space, where n is number of nodes, deg(n) is the maximum number of neighbors of all nodes.
 Use a Set to maintain all links, which will take O(e) memory space, where e is the number of links.
 
 
-Our application has too many nodes to keep them all in memory on one machine. How would you handle this in a real world application? There are many ways to approach this issue, but if you choose to go the database route please describe which database, your tables, indexes, queries, and performance. If you have another approach, please describe it in detail.
+### Our application has too many nodes to keep them all in memory on one machine. How would you handle this in a real world application? There are many ways to approach this issue, but if you choose to go the database route please describe which database, your tables, indexes, queries, and performance. If you have another approach, please describe it in detail.
 
 Answer:
 if there too many node to store in memory. We can use distributed database to maintain the graph and links, like using HBase.
